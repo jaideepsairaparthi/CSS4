@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 2 TASK 3</title>
+    <style>
+        .main{
+            background-color: #282A35;
+            margin-top: 50px;
+        }
+        .a{
+            background-color: lightpink;
+            width: 35%;
+            height: 25vh;
+            text-align: center;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0px -2px 4px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        .b{
+            background-color: #FFF4A3;
+            width: 35%;
+            height: 25vh;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .c{
+            background-color: #F3ECEA;
+            width: 35%;
+            height: 25vh;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .d{
+            background-color: #D9EEE1;
+            width: 35%;
+            height: 25vh;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .e{
+            background-color: #96D4D4;
+            width: 35%;
+            height: 25vh;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .f{
+            background-color: #E7E9EB;
+            width: 35%;
+            height: 25vh;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .g{
+            background-color:#FFC0C7;
+            width: 35%;
+            height: 13vh;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .h{
+            background-color: #FFF4A3;
+            width: 35%;
+            height: 13vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .i{
+            background-color:#F3ECEA;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            display: inline-block;
+        }
+        .j{
+            background-color:#D9EEE1;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .k{
+            background-color:#96D4D4;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:70px;
+            display: inline-block;
+        }
+        .l{background-color:#FFC0C7;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .m{
+            background-color:#FFF4A3;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            display: inline-block;
+        }
+        .n{
+            background-color:#F3ECEA;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .o{
+            background-color:#D9EEE1;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:70px;
+            display: inline-block;
+        }
+        .p{
+            background-color:#96D4D4;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .q{
+            background-color:#FFC0C7;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            display: inline-block;
+        }
+        .r{
+            background-color:#FFF4A3;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .s{
+            background-color:#F3ECEA;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:70px;
+            display: inline-block;
+        }
+        .t{
+            background-color:#D9EEE1;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .u{
+            background-color:#96D4D4;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 2% 3%;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            display: inline-block;
+        }
+        .v{
+            background-color:#FFC0C7;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .w{
+            background-color:#FFF4A3;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 0px;
+            margin-left:70px;
+            display: inline-block;
+        }
+        .x{
+            background-color:#F3ECEA;
+            width: 13%;
+            height: 12vh;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family:fantasy;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:25px;
+            display: inline-block;
+        }
+        .y{
+            background-color:#96D4D4;
+            width: 35%;
+            height: 13vh;
+            text-align: center;
+            font-family: serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .z{
+            background-color:#FFF4A3;
+            width: 35%;
+            height: 13vh;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:60px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .ab{
+            background-color:#FFC0C7;
+            width: 35%;
+            height: 13vh;
+            text-align: center;
+            font-family: cursive;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .bc{
+            background-color:#F3ECEA;
+            width: 35%;
+            height: 13vh;
+            text-align: center;
+            font-family: cursive;
+            padding: 2% 3%;
+            border: 0px solid;
+            margin-top: 40px;
+            margin-left:50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .nav{
+            position: fixed;
+            margin-top: 0;
+            background-color: #282A35;
+            color: white;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            letter-spacing: 1%;
+            height: 6vh;
+            top: 0px;
+            width: 96.9%;
+            padding: 0px 15px;
+            scrollbar-width:none; 
+        }
+
+        .nav ul li:hover{
+            background-color: black;
+            padding: 0px 15px 0px 15px;
+        }
+        .nav ul li{
+            margin-right: 50px;
+        }
+        .abcd{
+            padding-right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul style="list-style-type: none; display: flex; ">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>SQL</li>
+                <li>PYTHON</li>
+                <li>JAVA</li>
+                <li>PHP</li>
+                <li>HOW TO</li>
+                <li>W3.CSS</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>BOOTSTRAP</li>
+                <li>REACT</li>
+                <li>MYSQL</li>
+                <li>JQUERY</li>
+                <li>EXCEL</li>
+                <li>XML</li>
+                <li>DJANGO</li>
+                <li>NUMPY</li>
+                <li>PANDAS</li>
+                <li>NODEJS</li>
+                <li>R</li>
+                <li>TYPESCRIPT</li>
+                <li>ANGULAR</li>
+                <li>GIT</li>
+                <li>POSTGRESQL</li>
+                <li>MONGODB</li>
+                <li>ASP</li>
+                <li>AI</li>
+                <li>GO</li>
+                <li>KOTLIN</li>
+                <li>SASS</li>
+                <li>VUE</li>
+                <li>DSA</li>
+                <li>GEN AI</li>
+                <li>SCIPY</li>
+                <li>AWS</li>
+                <li>CYBERSECURITY</li>
+                <li class="abcd">DATA SCIENCE</li>
+            </ul>
+        </div>
+    <div class="a">
+        <h1>PHP</h1>
+        <p>A web server programming language</p>
+        <button style="background-color: black; color:white; border-radius:25px; padding: 10px 30px; font-size: 12px; margin:auto;">Learn PHP</button>
+    </div>
+    <div class="b">
+        <h1>jQuery</h1>
+        <p>A JS library for developing web pages</p>
+        <button style="background-color: black; color:white; border-radius:25px; padding: 10px 30px; font-size: 12px; margin:auto;">Learn jQuery</button>
+    </div>
+    <div class="c">
+        <h1>Java</h1>
+        <p>A programming language</p>
+        <button style="background-color: black; color:white; border-radius:25px; padding: 10px 30px; font-size: 12px; margin:auto;">Learn Java</button>
+    </div>
+    <div class="d">
+        <h1>C++</h1>
+        <p>A programming language</p>
+        <button style="background-color: black; color:white; border-radius:25px; padding: 10px 30px; font-size: 12px; margin:auto;">Learn C++</button>
+    </div>
+    <div class="e">
+        <h1>W3.CSS</h1>
+        <p>A CSS framework for faster responsive web pages</p>
+        <button style="background-color: black; color:white; border-radius:25px; padding: 10px 30px; font-size: 12px; margin:auto;">Learn W3.CSS</button>
+    </div>
+    <div class="f">
+        <h1>Bootstrap</h1>
+        <p>A CSS framework for designing better web pages</p>
+        <button style="background-color: black; color:white; border-radius:25px; padding: 10px 30px; font-size: 12px; margin:auto;">Learn Bootstrap</button>
+    </div>
+    <div class="g">
+        <h1>C</h1>
+    </div>
+    <div class="h">
+        <h1>C#</h1>
+    </div>
+    <div class="i">
+        <h1>R</h1>
+    </div>
+    <div class="j">
+        <h1>Kotlin</h1>
+    </div>
+    <div class="k">
+        <h1>Node.js</h1>
+    </div>
+    <div class="l">
+        <h1>React</h1>
+    </div>
+    <div class="m">
+        <h1>JSON</h1>
+    </div>
+    <div class="n">
+        <h1>Vue</h1>
+    </div>
+    <div class="o">
+        <h1>MySQL</h1>
+    </div>
+    <div class="p">
+        <h1>XML</h1>
+    </div>
+    <div class="q">
+        <h1>Sass</h1>
+    </div>
+    <div class="r">
+        <h1>Icons</h1>
+    </div>
+    <div class="s">
+        <h1>RWD</h1>
+    </div>
+    <div class="t">
+        <h1>Graphics</h1>
+    </div>
+    <div class="u">
+        <h1>SVG</h1>
+    </div>
+    <div class="v">
+        <h1>Canvas</h1>
+    </div>
+    <div class="w">
+        <h1>Raspberry</h1>
+    </div>
+    <div class="x">
+        <h1>Networking</h1>
+    </div>
+    <div class="y">
+        <h1>Excel</h1>
+    </div>
+    <div class="z">
+        <h1>DSA</h1>
+    </div>
+    <div class="ab">
+        <h1>Machine Learning</h1>
+    </div>
+    <div class="bc">
+        <h1>Artificial Intelligence</h1>
+    </div>
+</div>
+</body>
+</html>

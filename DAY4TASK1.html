@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 4 TASK 1</title>
+    <style>
+        .dropdown-button{
+            background-color: aqua;
+            font-size: 25px;
+        }
+        .dropdown-content li a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        .dropdown-content li{
+            list-style-type: none;
+            padding: 10px;
+        }
+        .dropdown-content{
+            border: 2px solid;
+            width: 60vw;
+            display: none;
+        }
+        .dropdown-button:focus + .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body><center>
+    <div class="dropdown">
+        <button class="dropdown-button">Menu</button>
+            <ul class="dropdown-content">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+             </ul>
+    </div>
+</center>
+</body>
+</html>
